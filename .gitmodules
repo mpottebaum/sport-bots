@@ -1,0 +1,6 @@
+[submodule "sport-bots-api"]
+	path = sport-bots-api
+	url = git@github.com:mpottebaum/sport-bots-api.git
+[submodule "sport-bots-frontend"]
+	path = sport-bots-frontend
+	url = git@github.com:mpottebaum/sport-bots-frontend.git
