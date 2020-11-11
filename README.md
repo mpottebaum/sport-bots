@@ -17,7 +17,15 @@ cd sport-bots-api
 bundle
 ```
 
-3. Install dependencies in the front end directory:
+3. Still in the back end directory, build the database:
+
+```
+rails db:create
+rails db:migrate
+rails db:seed
+```
+
+4. Install dependencies in the front end directory:
 
 ```
 cd sport-bots-frontend
@@ -28,7 +36,7 @@ npm install
 
 To use Sport Bots, follow these steps:
 
-1. From the sport-bots-backend directory, start the API server:
+1. From the sport-bots-api directory, start the API server:
 
 ```
 rails s
@@ -40,4 +48,8 @@ rails s
 npm start
 ```
 
-The front end server will run on `localhost:3001`.
+The front end server will run on `localhost:3001`. If you need to use a different port, run the following command (instead of `npm start`) with the port number of your choice where it says `3001`:
+
+```
+PORT=3001 node server
+```
