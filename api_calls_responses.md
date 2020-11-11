@@ -8,6 +8,7 @@ POST /api/v1/auth
 
 Expected Response:
 
+```
 {
     "team": {
         "id": number,
@@ -17,6 +18,7 @@ Expected Response:
     },
     "token": string
 }
+```
 
 
 # VERIFY TOKEN
@@ -25,6 +27,7 @@ GET /api/v1/auth
 
 Expected Response:
 
+```
 {
     "team": {
         "id": number,
@@ -33,6 +36,7 @@ Expected Response:
         "saved_roster": bool
     },
 }
+```
 
 
 ## TeamsController
@@ -43,6 +47,7 @@ POST /api/v1/teams
 
 Expected Response:
 
+```
 {
     "team": {
         "id": number,
@@ -52,6 +57,7 @@ Expected Response:
     },
     "token": string
 }
+```
 
 
 # UPDATE TEAM
@@ -60,6 +66,7 @@ PUT /api/v1/teams/:id
 
 Expected Response:
 
+```
 {
     "team": {
         "id": number,
@@ -68,6 +75,7 @@ Expected Response:
         "saved_roster": bool
     },
 }
+```
 
 
 ## RostersController
@@ -83,6 +91,7 @@ PUT /api/v1/teams/:id/rosters
 
 Expected Response From Each Endpoint:
 
+```
 {
     "team": {
         "id": number,
@@ -114,7 +123,7 @@ Expected Response From Each Endpoint:
         ]
     }
 }
-
+```
 
 
 # DELETE ROSTER
@@ -123,6 +132,7 @@ DELETE /api/v1/teams/:id/rosters
 
 Expected Response:
 
+```
 {
     "team": {
         "id": number,
@@ -131,6 +141,7 @@ Expected Response:
         "saved_roster": false
     }
 }
+```
 
 
 # RANDOM ROSTER
@@ -139,6 +150,7 @@ GET /api/v1/teams/:id/rosters/random
 
 Expected Response:
 
+```
 {
     "roster": {
         "id": number,
@@ -164,6 +176,7 @@ Expected Response:
         ]
     }
 }
+```
 
 
 ## BotsController
@@ -174,6 +187,7 @@ GET /api/v1/teams/:id/bots
 
 Expected Response:
 
+```
 {
     "bots": [
         {
@@ -186,3 +200,4 @@ Expected Response:
         }
     ]
 }
+```
