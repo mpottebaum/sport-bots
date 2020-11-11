@@ -1,8 +1,8 @@
-### ENDPOINTS
+# ENDPOINTS
 
 ## AuthController
 
-# LOGIN:
+### LOGIN:
 
 POST /api/v1/auth
 
@@ -21,7 +21,7 @@ Expected Response:
 ```
 
 
-# VERIFY TOKEN
+### VERIFY TOKEN
 
 GET /api/v1/auth
 
@@ -41,7 +41,7 @@ Expected Response:
 
 ## TeamsController
 
-# CREATE TEAM
+### CREATE TEAM
 
 POST /api/v1/teams
 
@@ -60,7 +60,7 @@ Expected Response:
 ```
 
 
-# UPDATE TEAM
+### UPDATE TEAM
 
 PUT /api/v1/teams/:id
 
@@ -80,7 +80,7 @@ Expected Response:
 
 ## RostersController
 
-# CREATE/READ/UPDATE ROSTER
+### CREATE/READ/UPDATE ROSTER
 
 POST /api/v1/teams/:id/rosters
 
@@ -126,7 +126,7 @@ Expected Response From Each Endpoint:
 ```
 
 
-# DELETE ROSTER
+### DELETE ROSTER
 
 DELETE /api/v1/teams/:id/rosters
 
@@ -144,7 +144,7 @@ Expected Response:
 ```
 
 
-# RANDOM ROSTER
+### RANDOM ROSTER
 
 GET /api/v1/teams/:id/rosters/random
 
@@ -181,7 +181,7 @@ Expected Response:
 
 ## BotsController
 
-# GET TEAM'S BOTS
+### GET TEAM'S BOTS
 
 GET /api/v1/teams/:id/bots
 
