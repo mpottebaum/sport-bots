@@ -1,0 +1,43 @@
+# Sport Bots
+
+## Installing Sport Bots
+
+To install Sport Bots, follow these steps:
+
+1. Clone the full contents of this repo and its submodules
+
+```
+git clone --recurse-submodules git@github.com:mpottebaum/sport-bots.git
+```
+
+2. Install gems in the back end directory:
+
+```
+cd sport-bots-api
+bundle
+```
+
+3. Install dependencies in the front end directory:
+
+```
+cd sport-bots-frontend
+npm install
+```
+
+## Using Sport Bots
+
+To use Sport Bots, follow these steps:
+
+1. From the sport-bots-backend directory, start the API server:
+
+```
+rails s
+```
+
+2. From the sport-bots-frontend directory, start the front end server.
+
+```
+npm start
+```
+
+The front end server will run on `localhost:3001`.
